@@ -1,0 +1,36 @@
+﻿@model MVCFirstProject.Models.Employee
+
+@{
+    ViewBag.Title = "Employeeinfo";
+    Layout = "~/View/Shared/_Layout.cshtml";
+}
+
+<style>
+    table{
+        font-family:Arial,sans-serif;
+        border-collapse:collapse;
+        width:100%;
+    }
+
+    td,th{
+        border:1px solid #dddddd;
+        text-align:left;
+        padding:8px;
+    }
+</style>
+
+<h3>Employee information</h3>
+
+<table>
+    <tr>
+        <th>Employeeid</th>
+        <th>EmployeeName</th>
+        <th>EmployeeLocation</th>
+    </tr>
+    <tr>
+        <td>@Model.Employeeld</td>
+        <td>@Model.EmployeeName</td>
+        <td>@Model.EmployeeLocation</td>
+    </tr>
+</table>
+
